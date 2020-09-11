@@ -1,1 +1,1 @@
-# A virtual keyboard to show what keys your pressing on.
+# A virtual RGB keyboard.
