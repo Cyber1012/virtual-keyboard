@@ -1,28 +1,178 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    
-    <meta charset="utf-8">
-    <title></title>
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="External-Code/index.min.css">
-  </head>
+<head>
 
-  <!-- Bootstrap/Bootswatch  -->
-  <!-- Coming Soon... Finding One Right Now At https://www.bootstrapcdn.com/bootswatch/ -->
+  <meta charset="utf-8">
+  <!-- Viewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <body>
+  <title>Virtual RGB Keyboard</title>
 
-    <!-- jQuery 3.5.1 -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- Bootstrap/Bootswatch CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/slate/bootstrap.min.css"
+    integrity="sha384-8iuq0iaMHpnH2vSyvZMSIqQuUnQA7QM+f6srIdlgBrTSEyd//AWNMyEaSF2yPzNQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
 
-    <!-- Bootstrap 3.5.2 Javascript -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  <!-- CSS -->
+  <link rel="stylesheet" href="index.css">
 
-    <!-- Javascript -->
-    <script src="External-Code/index.min.js" charset="utf-8"></script>
+</head>
 
-  </body>
+<body>
+
+  <div id="tableContainer">
+
+    <table>
+      <td colspan="12"><button class="line2"></button></td>
+      <!-- Keys: First Row -->
+      <tr>
+        
+        <td><button class="btn 1">1</button></td>
+
+        <td><button class="btn 2">2</button></td>
+
+        <td><button class="btn 3">3</button></td>
+
+        <td><button class="btn 4">4</button></td>
+
+        <td><button class="btn 5">5</button></td>
+
+        <td><button class="btn 6">6</button></td>
+
+        <td><button class="btn 7">7</button></td>
+
+        <td><button class="btn 8">8</button></td>
+
+        <td><button class="btn 9">9</button></td>
+
+        <td><button class="btn 0">0</button></td>
+
+      </tr>
+
+      <!-- Keys: Second Row -->
+      <tr>
+
+        <td><button class="btn q">Q</button></td>
+
+        <td><button class="btn w">W</button></td>
+
+        <td><button class="btn e">E</button></td>
+
+        <td><button class="btn r">R</button></td>
+
+        <td><button class="btn t">T</button></td>
+
+        <td><button class="btn y">Y</button></td>
+
+        <td><button class="btn u">U</button></td>
+
+        <td><button class="btn i">I</button></td>
+
+        <td><button class="btn o">O</button></td>
+
+        <td><button class="btn p">P</button></td>
+
+        <td colspan="2"><button class="btn backspace">←</button></td>
+
+      </tr>
+
+      <!-- Keys: Third Row -->
+      <tr>
+
+        <td><button class="btn a">A</button></td>
+
+        <td><button class="btn s">S</button></td>
+
+        <td><button class="btn d">D</button></td>
+
+        <td><button class="btn f">F</button></td>
+
+        <td><button class="btn g">G</button></td>
+
+        <td><button class="btn h">H</button></td>
+
+        <td><button class="btn j">J</button></td>
+
+        <td><button class="btn k">K</button></td>
+
+        <td><button class="btn l">L</button></td>
+
+        <td><button class="btn quotation-mark">"</button></td>
+
+        <td colspan="2"><button class="btn enter">↵</button></td>
+
+      </tr>
+
+      <!-- Keys: Fourth Row -->
+      <tr>
+
+        <td><button class="btn shift-left">↑</button></td>
+
+        <td><button class="btn">2</button></td>
+
+        <td><button class="btn">3</button></td>
+
+        <td><button class="btn">4</button></td>
+
+        <td><button class="btn">5</button></td>
+
+        <td><button class="btn">6</button></td>
+
+        <td><button class="btn">7</button></td>
+
+        <td><button class="btn">8</button></td>
+
+        <td><button class="btn">9</button></td>
+
+        <td><button class="btn">0</button></td>
+
+        <td><button class="btn">5</button></td>
+
+        <td><button class="btn shift-right">↑</button></td>
+
+      </tr>
+
+      <!-- Keys: Fifth Row -->
+      <tr>
+
+        <td><button class="btn">1</button></td>
+
+        <td><button class="btn">2</button></td>
+
+        <td><button class="btn">3</button></td>
+
+        <td colspan="7"><button class="btn spacebar"><span class="spacebar-dash">-</span></button></td>
+
+        <td><button class="btn">4</button></td>
+
+        <td><button class="btn">5</button></td>
+        <button class="line3"></button>
+      </tr>
+      <td><button class="line"></button></td>
+
+      <button class="line4"></button>
+
+    </table>
+   
+
+  </div>
+
+
+
+  <!-- jQuery 3.5.1 -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+  <!-- Bootstrap 3.5.2 Javascript -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+  </script>
+
+  <!-- Javascript -->
+  <script src="index.js" charset="utf-8"></script>
+
+</body>
 
 </html>
